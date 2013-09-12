@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LibSubtitle' target in the 'LibSubtitle' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

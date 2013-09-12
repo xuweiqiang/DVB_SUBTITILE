@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95BA663A154A8EF6007EAB14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BA6639154A8EF6007EAB14 /* Foundation.framework */; };
+		95BA665E154A8F4A007EAB14 /* ALI_DTV_SUB.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BA6647154A8F33007EAB14 /* ALI_DTV_SUB.c */; };
+		95BA665F154A8F4A007EAB14 /* dsub_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BA664A154A8F33007EAB14 /* dsub_decoder.c */; };
+		95BA6660154A8F4A007EAB14 /* dsub_display_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BA664C154A8F33007EAB14 /* dsub_display_set.c */; };
+		95BA6661154A8F4A007EAB14 /* dsub_finder.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BA664E154A8F33007EAB14 /* dsub_finder.c */; };
+		95BA6662154A8F4A007EAB14 /* dsub_renderer.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BA6650154A8F33007EAB14 /* dsub_renderer.c */; };
+		95BA6663154A8F4A007EAB14 /* dsub_segments.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BA6652154A8F33007EAB14 /* dsub_segments.c */; };
+		95BA6664154A8F4A007EAB14 /* exlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BA6654154A8F33007EAB14 /* exlist.c */; };
+		95BA6665154A8F4A007EAB14 /* subdecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BA665A154A8F33007EAB14 /* subdecoder.cpp */; };
+		95BA6666154A8F4A007EAB14 /* SUBSync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BA665C154A8F33007EAB14 /* SUBSync.cpp */; };
+		95BA66A8154A9217007EAB14 /* SUBDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BA66A7154A9217007EAB14 /* SUBDecoder.h */; };
+		DDB8227C15A13E2900CDF560 /* amfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224115A13E2900CDF560 /* amfilter.h */; };
+		DDB8227D15A13E2900CDF560 /* atlbase.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224215A13E2900CDF560 /* atlbase.h */; };
+		DDB8227E15A13E2900CDF560 /* atlcom.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224315A13E2900CDF560 /* atlcom.h */; };
+		DDB8227F15A13E2900CDF560 /* atlwin.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224415A13E2900CDF560 /* atlwin.h */; };
+		DDB8228015A13E2900CDF560 /* basetsd.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224515A13E2900CDF560 /* basetsd.h */; };
+		DDB8228115A13E2900CDF560 /* basetyps.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224615A13E2900CDF560 /* basetyps.h */; };
+		DDB8228215A13E2900CDF560 /* comdef.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224715A13E2900CDF560 /* comdef.h */; };
+		DDB8228315A13E2900CDF560 /* commctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224815A13E2900CDF560 /* commctrl.h */; };
+		DDB8228415A13E2900CDF560 /* commdlg.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224915A13E2900CDF560 /* commdlg.h */; };
+		DDB8228515A13E2900CDF560 /* comutil.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224A15A13E2900CDF560 /* comutil.h */; };
+		DDB8228615A13E2900CDF560 /* crtdbg.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224B15A13E2900CDF560 /* crtdbg.h */; };
+		DDB8228715A13E2900CDF560 /* ddraw.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224C15A13E2900CDF560 /* ddraw.h */; };
+		DDB8228815A13E2900CDF560 /* dinput.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224D15A13E2900CDF560 /* dinput.h */; };
+		DDB8228915A13E2900CDF560 /* dvdevcod.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224E15A13E2900CDF560 /* dvdevcod.h */; };
+		DDB8228A15A13E2900CDF560 /* dvdmedia.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8224F15A13E2900CDF560 /* dvdmedia.h */; };
+		DDB8228B15A13E2900CDF560 /* evcode.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225015A13E2900CDF560 /* evcode.h */; };
+		DDB8228C15A13E2900CDF560 /* fileioext.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225115A13E2900CDF560 /* fileioext.h */; };
+		DDB8228D15A13E2900CDF560 /* initguid.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225215A13E2900CDF560 /* initguid.h */; };
+		DDB8228E15A13E2900CDF560 /* io.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225315A13E2900CDF560 /* io.h */; };
+		DDB8228F15A13E2900CDF560 /* iviUnknwn.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225415A13E2900CDF560 /* iviUnknwn.h */; };
+		DDB8229015A13E2900CDF560 /* linuxrwqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225515A13E2900CDF560 /* linuxrwqueue.h */; };
+		DDB8229115A13E2900CDF560 /* mmreg.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225615A13E2900CDF560 /* mmreg.h */; };
+		DDB8229215A13E2900CDF560 /* mmsystem.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225715A13E2900CDF560 /* mmsystem.h */; };
+		DDB8229315A13E2900CDF560 /* multimon.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225815A13E2900CDF560 /* multimon.h */; };
+		DDB8229415A13E2900CDF560 /* oaidl.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225915A13E2900CDF560 /* oaidl.h */; };
+		DDB8229515A13E2900CDF560 /* objbase.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225A15A13E2900CDF560 /* objbase.h */; };
+		DDB8229615A13E2900CDF560 /* ocidl.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225B15A13E2900CDF560 /* ocidl.h */; };
+		DDB8229715A13E2900CDF560 /* ole2.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225C15A13E2900CDF560 /* ole2.h */; };
+		DDB8229815A13E2900CDF560 /* oleauto.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225D15A13E2900CDF560 /* oleauto.h */; };
+		DDB8229915A13E2900CDF560 /* poppack.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225E15A13E2900CDF560 /* poppack.h */; };
+		DDB8229A15A13E2900CDF560 /* process.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8225F15A13E2900CDF560 /* process.h */; };
+		DDB8229B15A13E2900CDF560 /* pshpack1.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226015A13E2900CDF560 /* pshpack1.h */; };
+		DDB8229C15A13E2900CDF560 /* pshpack2.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226115A13E2900CDF560 /* pshpack2.h */; };
+		DDB8229D15A13E2900CDF560 /* pullpin.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226215A13E2900CDF560 /* pullpin.h */; };
+		DDB8229E15A13E2900CDF560 /* Qedit.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226315A13E2900CDF560 /* Qedit.h */; };
+		DDB8229F15A13E2900CDF560 /* regtool.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226415A13E2900CDF560 /* regtool.h */; };
+		DDB822A015A13E2900CDF560 /* rpc.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226515A13E2900CDF560 /* rpc.h */; };
+		DDB822A115A13E2900CDF560 /* rpcndr.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226615A13E2900CDF560 /* rpcndr.h */; };
+		DDB822A215A13E2900CDF560 /* shlobj.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226715A13E2900CDF560 /* shlobj.h */; };
+		DDB822A315A13E2900CDF560 /* streams.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226815A13E2900CDF560 /* streams.h */; };
+		DDB822A415A13E2900CDF560 /* strmif.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226915A13E2900CDF560 /* strmif.h */; };
+		DDB822A515A13E2900CDF560 /* tchar.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226A15A13E2900CDF560 /* tchar.h */; };
+		DDB822A615A13E2900CDF560 /* Tlhelp32.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226B15A13E2900CDF560 /* Tlhelp32.h */; };
+		DDB822A715A13E2900CDF560 /* unknwn.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226C15A13E2900CDF560 /* unknwn.h */; };
+		DDB822A815A13E2900CDF560 /* vfwmsgs.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226D15A13E2900CDF560 /* vfwmsgs.h */; };
+		DDB822A915A13E2900CDF560 /* winbase.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226E15A13E2900CDF560 /* winbase.h */; };
+		DDB822AA15A13E2900CDF560 /* wincompat.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8226F15A13E2900CDF560 /* wincompat.h */; };
+		DDB822AB15A13E2900CDF560 /* windef.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227015A13E2900CDF560 /* windef.h */; };
+		DDB822AC15A13E2900CDF560 /* windows.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227115A13E2900CDF560 /* windows.h */; };
+		DDB822AD15A13E2900CDF560 /* windowsx.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227215A13E2900CDF560 /* windowsx.h */; };
+		DDB822AE15A13E2900CDF560 /* winerror.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227315A13E2900CDF560 /* winerror.h */; };
+		DDB822AF15A13E2900CDF560 /* wingdi.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227415A13E2900CDF560 /* wingdi.h */; };
+		DDB822B015A13E2900CDF560 /* winnls.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227515A13E2900CDF560 /* winnls.h */; };
+		DDB822B115A13E2900CDF560 /* winnt.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227615A13E2900CDF560 /* winnt.h */; };
+		DDB822B215A13E2900CDF560 /* winreg.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227715A13E2900CDF560 /* winreg.h */; };
+		DDB822B315A13E2900CDF560 /* winsock2.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227815A13E2900CDF560 /* winsock2.h */; };
+		DDB822B415A13E2900CDF560 /* winuser.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227915A13E2900CDF560 /* winuser.h */; };
+		DDB822B515A13E2900CDF560 /* Ws2tcpip.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227A15A13E2900CDF560 /* Ws2tcpip.h */; };
+		DDB822B615A13E2900CDF560 /* wtypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8227B15A13E2900CDF560 /* wtypes.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95BA6636154A8EF6007EAB14 /* libLibSubtitle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibSubtitle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BA6639154A8EF6007EAB14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95BA663D154A8EF6007EAB14 /* LibSubtitle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibSubtitle-Prefix.pch"; sourceTree = "<group>"; };
+		95BA6647154A8F33007EAB14 /* ALI_DTV_SUB.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ALI_DTV_SUB.c; sourceTree = "<group>"; };
+		95BA6648154A8F33007EAB14 /* ALI_DTV_SUB_api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALI_DTV_SUB_api.h; sourceTree = "<group>"; };
+		95BA6649154A8F33007EAB14 /* ALI_DTV_SUB_typedef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALI_DTV_SUB_typedef.h; sourceTree = "<group>"; };
+		95BA664A154A8F33007EAB14 /* dsub_decoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dsub_decoder.c; sourceTree = "<group>"; };
+		95BA664B154A8F33007EAB14 /* dsub_decoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dsub_decoder.h; sourceTree = "<group>"; };
+		95BA664C154A8F33007EAB14 /* dsub_display_set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dsub_display_set.c; sourceTree = "<group>"; };
+		95BA664D154A8F33007EAB14 /* dsub_display_set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dsub_display_set.h; sourceTree = "<group>"; };
+		95BA664E154A8F33007EAB14 /* dsub_finder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dsub_finder.c; sourceTree = "<group>"; };
+		95BA664F154A8F33007EAB14 /* dsub_finder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dsub_finder.h; sourceTree = "<group>"; };
+		95BA6650154A8F33007EAB14 /* dsub_renderer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dsub_renderer.c; sourceTree = "<group>"; };
+		95BA6651154A8F33007EAB14 /* dsub_renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dsub_renderer.h; sourceTree = "<group>"; };
+		95BA6652154A8F33007EAB14 /* dsub_segments.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dsub_segments.c; sourceTree = "<group>"; };
+		95BA6653154A8F33007EAB14 /* dsub_segments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dsub_segments.h; sourceTree = "<group>"; };
+		95BA6654154A8F33007EAB14 /* exlist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = exlist.c; sourceTree = "<group>"; };
+		95BA6655154A8F33007EAB14 /* exlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exlist.h; sourceTree = "<group>"; };
+		95BA6657154A8F33007EAB14 /* ALI_DTV_SUB_api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALI_DTV_SUB_api.h; sourceTree = "<group>"; };
+		95BA6658154A8F33007EAB14 /* ALI_DTV_SUB_typedef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALI_DTV_SUB_typedef.h; sourceTree = "<group>"; };
+		95BA6659154A8F33007EAB14 /* McCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = McCom.h; sourceTree = "<group>"; };
+		95BA665A154A8F33007EAB14 /* subdecoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = subdecoder.cpp; sourceTree = "<group>"; };
+		95BA665B154A8F33007EAB14 /* SUBDecoder_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUBDecoder_types.h; sourceTree = "<group>"; };
+		95BA665C154A8F33007EAB14 /* SUBSync.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SUBSync.cpp; sourceTree = "<group>"; };
+		95BA665D154A8F33007EAB14 /* SUBSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUBSync.h; sourceTree = "<group>"; };
+		95BA66A7154A9217007EAB14 /* SUBDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SUBDecoder.h; path = ../../../../include/SUBDecoder.h; sourceTree = "<group>"; };
+		DDB8224115A13E2900CDF560 /* amfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amfilter.h; sourceTree = "<group>"; };
+		DDB8224215A13E2900CDF560 /* atlbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atlbase.h; sourceTree = "<group>"; };
+		DDB8224315A13E2900CDF560 /* atlcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atlcom.h; sourceTree = "<group>"; };
+		DDB8224415A13E2900CDF560 /* atlwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atlwin.h; sourceTree = "<group>"; };
+		DDB8224515A13E2900CDF560 /* basetsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basetsd.h; sourceTree = "<group>"; };
+		DDB8224615A13E2900CDF560 /* basetyps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basetyps.h; sourceTree = "<group>"; };
+		DDB8224715A13E2900CDF560 /* comdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comdef.h; sourceTree = "<group>"; };
+		DDB8224815A13E2900CDF560 /* commctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commctrl.h; sourceTree = "<group>"; };
+		DDB8224915A13E2900CDF560 /* commdlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commdlg.h; sourceTree = "<group>"; };
+		DDB8224A15A13E2900CDF560 /* comutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comutil.h; sourceTree = "<group>"; };
+		DDB8224B15A13E2900CDF560 /* crtdbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crtdbg.h; sourceTree = "<group>"; };
+		DDB8224C15A13E2900CDF560 /* ddraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ddraw.h; sourceTree = "<group>"; };
+		DDB8224D15A13E2900CDF560 /* dinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dinput.h; sourceTree = "<group>"; };
+		DDB8224E15A13E2900CDF560 /* dvdevcod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dvdevcod.h; sourceTree = "<group>"; };
+		DDB8224F15A13E2900CDF560 /* dvdmedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dvdmedia.h; sourceTree = "<group>"; };
+		DDB8225015A13E2900CDF560 /* evcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evcode.h; sourceTree = "<group>"; };
+		DDB8225115A13E2900CDF560 /* fileioext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileioext.h; sourceTree = "<group>"; };
+		DDB8225215A13E2900CDF560 /* initguid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initguid.h; sourceTree = "<group>"; };
+		DDB8225315A13E2900CDF560 /* io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		DDB8225415A13E2900CDF560 /* iviUnknwn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iviUnknwn.h; sourceTree = "<group>"; };
+		DDB8225515A13E2900CDF560 /* linuxrwqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linuxrwqueue.h; sourceTree = "<group>"; };
+		DDB8225615A13E2900CDF560 /* mmreg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmreg.h; sourceTree = "<group>"; };
+		DDB8225715A13E2900CDF560 /* mmsystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmsystem.h; sourceTree = "<group>"; };
+		DDB8225815A13E2900CDF560 /* multimon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multimon.h; sourceTree = "<group>"; };
+		DDB8225915A13E2900CDF560 /* oaidl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oaidl.h; sourceTree = "<group>"; };
+		DDB8225A15A13E2900CDF560 /* objbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objbase.h; sourceTree = "<group>"; };
+		DDB8225B15A13E2900CDF560 /* ocidl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocidl.h; sourceTree = "<group>"; };
+		DDB8225C15A13E2900CDF560 /* ole2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole2.h; sourceTree = "<group>"; };
+		DDB8225D15A13E2900CDF560 /* oleauto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oleauto.h; sourceTree = "<group>"; };
+		DDB8225E15A13E2900CDF560 /* poppack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poppack.h; sourceTree = "<group>"; };
+		DDB8225F15A13E2900CDF560 /* process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = process.h; sourceTree = "<group>"; };
+		DDB8226015A13E2900CDF560 /* pshpack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pshpack1.h; sourceTree = "<group>"; };
+		DDB8226115A13E2900CDF560 /* pshpack2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pshpack2.h; sourceTree = "<group>"; };
+		DDB8226215A13E2900CDF560 /* pullpin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pullpin.h; sourceTree = "<group>"; };
+		DDB8226315A13E2900CDF560 /* Qedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Qedit.h; sourceTree = "<group>"; };
+		DDB8226415A13E2900CDF560 /* regtool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regtool.h; sourceTree = "<group>"; };
+		DDB8226515A13E2900CDF560 /* rpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpc.h; sourceTree = "<group>"; };
+		DDB8226615A13E2900CDF560 /* rpcndr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpcndr.h; sourceTree = "<group>"; };
+		DDB8226715A13E2900CDF560 /* shlobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shlobj.h; sourceTree = "<group>"; };
+		DDB8226815A13E2900CDF560 /* streams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streams.h; sourceTree = "<group>"; };
+		DDB8226915A13E2900CDF560 /* strmif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strmif.h; sourceTree = "<group>"; };
+		DDB8226A15A13E2900CDF560 /* tchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tchar.h; sourceTree = "<group>"; };
+		DDB8226B15A13E2900CDF560 /* Tlhelp32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tlhelp32.h; sourceTree = "<group>"; };
+		DDB8226C15A13E2900CDF560 /* unknwn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unknwn.h; sourceTree = "<group>"; };
+		DDB8226D15A13E2900CDF560 /* vfwmsgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vfwmsgs.h; sourceTree = "<group>"; };
+		DDB8226E15A13E2900CDF560 /* winbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winbase.h; sourceTree = "<group>"; };
+		DDB8226F15A13E2900CDF560 /* wincompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wincompat.h; sourceTree = "<group>"; };
+		DDB8227015A13E2900CDF560 /* windef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windef.h; sourceTree = "<group>"; };
+		DDB8227115A13E2900CDF560 /* windows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windows.h; sourceTree = "<group>"; };
+		DDB8227215A13E2900CDF560 /* windowsx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windowsx.h; sourceTree = "<group>"; };
+		DDB8227315A13E2900CDF560 /* winerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winerror.h; sourceTree = "<group>"; };
+		DDB8227415A13E2900CDF560 /* wingdi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wingdi.h; sourceTree = "<group>"; };
+		DDB8227515A13E2900CDF560 /* winnls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winnls.h; sourceTree = "<group>"; };
+		DDB8227615A13E2900CDF560 /* winnt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winnt.h; sourceTree = "<group>"; };
+		DDB8227715A13E2900CDF560 /* winreg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winreg.h; sourceTree = "<group>"; };
+		DDB8227815A13E2900CDF560 /* winsock2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winsock2.h; sourceTree = "<group>"; };
+		DDB8227915A13E2900CDF560 /* winuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winuser.h; sourceTree = "<group>"; };
+		DDB8227A15A13E2900CDF560 /* Ws2tcpip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ws2tcpip.h; sourceTree = "<group>"; };
+		DDB8227B15A13E2900CDF560 /* wtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wtypes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95BA6633154A8EF6007EAB14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BA663A154A8EF6007EAB14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95BA662B154A8EF6007EAB14 = {
+			isa = PBXGroup;
+			children = (
+				95BA663B154A8EF6007EAB14 /* LibSubtitle */,
+				95BA6638154A8EF6007EAB14 /* Frameworks */,
+				95BA6637154A8EF6007EAB14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95BA6637154A8EF6007EAB14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95BA6636154A8EF6007EAB14 /* libLibSubtitle.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95BA6638154A8EF6007EAB14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95BA6639154A8EF6007EAB14 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95BA663B154A8EF6007EAB14 /* LibSubtitle */ = {
+			isa = PBXGroup;
+			children = (
+				95BA66A7154A9217007EAB14 /* SUBDecoder.h */,
+				DDB8224015A13E2900CDF560 /* libwin32 */,
+				95BA6646154A8F33007EAB14 /* libSUB */,
+				95BA6656154A8F33007EAB14 /* libSUBDecoder */,
+				95BA663C154A8EF6007EAB14 /* Supporting Files */,
+			);
+			path = LibSubtitle;
+			sourceTree = "<group>";
+		};
+		95BA663C154A8EF6007EAB14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95BA663D154A8EF6007EAB14 /* LibSubtitle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95BA6646154A8F33007EAB14 /* libSUB */ = {
+			isa = PBXGroup;
+			children = (
+				95BA6647154A8F33007EAB14 /* ALI_DTV_SUB.c */,
+				95BA6648154A8F33007EAB14 /* ALI_DTV_SUB_api.h */,
+				95BA6649154A8F33007EAB14 /* ALI_DTV_SUB_typedef.h */,
+				95BA664A154A8F33007EAB14 /* dsub_decoder.c */,
+				95BA664B154A8F33007EAB14 /* dsub_decoder.h */,
+				95BA664C154A8F33007EAB14 /* dsub_display_set.c */,
+				95BA664D154A8F33007EAB14 /* dsub_display_set.h */,
+				95BA664E154A8F33007EAB14 /* dsub_finder.c */,
+				95BA664F154A8F33007EAB14 /* dsub_finder.h */,
+				95BA6650154A8F33007EAB14 /* dsub_renderer.c */,
+				95BA6651154A8F33007EAB14 /* dsub_renderer.h */,
+				95BA6652154A8F33007EAB14 /* dsub_segments.c */,
+				95BA6653154A8F33007EAB14 /* dsub_segments.h */,
+				95BA6654154A8F33007EAB14 /* exlist.c */,
+				95BA6655154A8F33007EAB14 /* exlist.h */,
+			);
+			name = libSUB;
+			path = ../../../../src/libSUB;
+			sourceTree = "<group>";
+		};
+		95BA6656154A8F33007EAB14 /* libSUBDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				95BA6657154A8F33007EAB14 /* ALI_DTV_SUB_api.h */,
+				95BA6658154A8F33007EAB14 /* ALI_DTV_SUB_typedef.h */,
+				95BA6659154A8F33007EAB14 /* McCom.h */,
+				95BA665A154A8F33007EAB14 /* subdecoder.cpp */,
+				95BA665B154A8F33007EAB14 /* SUBDecoder_types.h */,
+				95BA665C154A8F33007EAB14 /* SUBSync.cpp */,
+				95BA665D154A8F33007EAB14 /* SUBSync.h */,
+			);
+			name = libSUBDecoder;
+			path = ../../../../src/libSUBDecoder;
+			sourceTree = "<group>";
+		};
+		DDB8224015A13E2900CDF560 /* libwin32 */ = {
+			isa = PBXGroup;
+			children = (
+				DDB8224115A13E2900CDF560 /* amfilter.h */,
+				DDB8224215A13E2900CDF560 /* atlbase.h */,
+				DDB8224315A13E2900CDF560 /* atlcom.h */,
+				DDB8224415A13E2900CDF560 /* atlwin.h */,
+				DDB8224515A13E2900CDF560 /* basetsd.h */,
+				DDB8224615A13E2900CDF560 /* basetyps.h */,
+				DDB8224715A13E2900CDF560 /* comdef.h */,
+				DDB8224815A13E2900CDF560 /* commctrl.h */,
+				DDB8224915A13E2900CDF560 /* commdlg.h */,
+				DDB8224A15A13E2900CDF560 /* comutil.h */,
+				DDB8224B15A13E2900CDF560 /* crtdbg.h */,
+				DDB8224C15A13E2900CDF560 /* ddraw.h */,
+				DDB8224D15A13E2900CDF560 /* dinput.h */,
+				DDB8224E15A13E2900CDF560 /* dvdevcod.h */,
+				DDB8224F15A13E2900CDF560 /* dvdmedia.h */,
+				DDB8225015A13E2900CDF560 /* evcode.h */,
+				DDB8225115A13E2900CDF560 /* fileioext.h */,
+				DDB8225215A13E2900CDF560 /* initguid.h */,
+				DDB8225315A13E2900CDF560 /* io.h */,
+				DDB8225415A13E2900CDF560 /* iviUnknwn.h */,
+				DDB8225515A13E2900CDF560 /* linuxrwqueue.h */,
+				DDB8225615A13E2900CDF560 /* mmreg.h */,
+				DDB8225715A13E2900CDF560 /* mmsystem.h */,
+				DDB8225815A13E2900CDF560 /* multimon.h */,
+				DDB8225915A13E2900CDF560 /* oaidl.h */,
+				DDB8225A15A13E2900CDF560 /* objbase.h */,
+				DDB8225B15A13E2900CDF560 /* ocidl.h */,
+				DDB8225C15A13E2900CDF560 /* ole2.h */,
+				DDB8225D15A13E2900CDF560 /* oleauto.h */,
+				DDB8225E15A13E2900CDF560 /* poppack.h */,
+				DDB8225F15A13E2900CDF560 /* process.h */,
+				DDB8226015A13E2900CDF560 /* pshpack1.h */,
+				DDB8226115A13E2900CDF560 /* pshpack2.h */,
+				DDB8226215A13E2900CDF560 /* pullpin.h */,
+				DDB8226315A13E2900CDF560 /* Qedit.h */,
+				DDB8226415A13E2900CDF560 /* regtool.h */,
+				DDB8226515A13E2900CDF560 /* rpc.h */,
+				DDB8226615A13E2900CDF560 /* rpcndr.h */,
+				DDB8226715A13E2900CDF560 /* shlobj.h */,
+				DDB8226815A13E2900CDF560 /* streams.h */,
+				DDB8226915A13E2900CDF560 /* strmif.h */,
+				DDB8226A15A13E2900CDF560 /* tchar.h */,
+				DDB8226B15A13E2900CDF560 /* Tlhelp32.h */,
+				DDB8226C15A13E2900CDF560 /* unknwn.h */,
+				DDB8226D15A13E2900CDF560 /* vfwmsgs.h */,
+				DDB8226E15A13E2900CDF560 /* winbase.h */,
+				DDB8226F15A13E2900CDF560 /* wincompat.h */,
+				DDB8227015A13E2900CDF560 /* windef.h */,
+				DDB8227115A13E2900CDF560 /* windows.h */,
+				DDB8227215A13E2900CDF560 /* windowsx.h */,
+				DDB8227315A13E2900CDF560 /* winerror.h */,
+				DDB8227415A13E2900CDF560 /* wingdi.h */,
+				DDB8227515A13E2900CDF560 /* winnls.h */,
+				DDB8227615A13E2900CDF560 /* winnt.h */,
+				DDB8227715A13E2900CDF560 /* winreg.h */,
+				DDB8227815A13E2900CDF560 /* winsock2.h */,
+				DDB8227915A13E2900CDF560 /* winuser.h */,
+				DDB8227A15A13E2900CDF560 /* Ws2tcpip.h */,
+				DDB8227B15A13E2900CDF560 /* wtypes.h */,
+			);
+			name = libwin32;
+			path = src/libwin32;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95BA6634154A8EF6007EAB14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BA66A8154A9217007EAB14 /* SUBDecoder.h in Headers */,
+				DDB8227C15A13E2900CDF560 /* amfilter.h in Headers */,
+				DDB8227D15A13E2900CDF560 /* atlbase.h in Headers */,
+				DDB8227E15A13E2900CDF560 /* atlcom.h in Headers */,
+				DDB8227F15A13E2900CDF560 /* atlwin.h in Headers */,
+				DDB8228015A13E2900CDF560 /* basetsd.h in Headers */,
+				DDB8228115A13E2900CDF560 /* basetyps.h in Headers */,
+				DDB8228215A13E2900CDF560 /* comdef.h in Headers */,
+				DDB8228315A13E2900CDF560 /* commctrl.h in Headers */,
+				DDB8228415A13E2900CDF560 /* commdlg.h in Headers */,
+				DDB8228515A13E2900CDF560 /* comutil.h in Headers */,
+				DDB8228615A13E2900CDF560 /* crtdbg.h in Headers */,
+				DDB8228715A13E2900CDF560 /* ddraw.h in Headers */,
+				DDB8228815A13E2900CDF560 /* dinput.h in Headers */,
+				DDB8228915A13E2900CDF560 /* dvdevcod.h in Headers */,
+				DDB8228A15A13E2900CDF560 /* dvdmedia.h in Headers */,
+				DDB8228B15A13E2900CDF560 /* evcode.h in Headers */,
+				DDB8228C15A13E2900CDF560 /* fileioext.h in Headers */,
+				DDB8228D15A13E2900CDF560 /* initguid.h in Headers */,
+				DDB8228E15A13E2900CDF560 /* io.h in Headers */,
+				DDB8228F15A13E2900CDF560 /* iviUnknwn.h in Headers */,
+				DDB8229015A13E2900CDF560 /* linuxrwqueue.h in Headers */,
+				DDB8229115A13E2900CDF560 /* mmreg.h in Headers */,
+				DDB8229215A13E2900CDF560 /* mmsystem.h in Headers */,
+				DDB8229315A13E2900CDF560 /* multimon.h in Headers */,
+				DDB8229415A13E2900CDF560 /* oaidl.h in Headers */,
+				DDB8229515A13E2900CDF560 /* objbase.h in Headers */,
+				DDB8229615A13E2900CDF560 /* ocidl.h in Headers */,
+				DDB8229715A13E2900CDF560 /* ole2.h in Headers */,
+				DDB8229815A13E2900CDF560 /* oleauto.h in Headers */,
+				DDB8229915A13E2900CDF560 /* poppack.h in Headers */,
+				DDB8229A15A13E2900CDF560 /* process.h in Headers */,
+				DDB8229B15A13E2900CDF560 /* pshpack1.h in Headers */,
+				DDB8229C15A13E2900CDF560 /* pshpack2.h in Headers */,
+				DDB8229D15A13E2900CDF560 /* pullpin.h in Headers */,
+				DDB8229E15A13E2900CDF560 /* Qedit.h in Headers */,
+				DDB8229F15A13E2900CDF560 /* regtool.h in Headers */,
+				DDB822A015A13E2900CDF560 /* rpc.h in Headers */,
+				DDB822A115A13E2900CDF560 /* rpcndr.h in Headers */,
+				DDB822A215A13E2900CDF560 /* shlobj.h in Headers */,
+				DDB822A315A13E2900CDF560 /* streams.h in Headers */,
+				DDB822A415A13E2900CDF560 /* strmif.h in Headers */,
+				DDB822A515A13E2900CDF560 /* tchar.h in Headers */,
+				DDB822A615A13E2900CDF560 /* Tlhelp32.h in Headers */,
+				DDB822A715A13E2900CDF560 /* unknwn.h in Headers */,
+				DDB822A815A13E2900CDF560 /* vfwmsgs.h in Headers */,
+				DDB822A915A13E2900CDF560 /* winbase.h in Headers */,
+				DDB822AA15A13E2900CDF560 /* wincompat.h in Headers */,
+				DDB822AB15A13E2900CDF560 /* windef.h in Headers */,
+				DDB822AC15A13E2900CDF560 /* windows.h in Headers */,
+				DDB822AD15A13E2900CDF560 /* windowsx.h in Headers */,
+				DDB822AE15A13E2900CDF560 /* winerror.h in Headers */,
+				DDB822AF15A13E2900CDF560 /* wingdi.h in Headers */,
+				DDB822B015A13E2900CDF560 /* winnls.h in Headers */,
+				DDB822B115A13E2900CDF560 /* winnt.h in Headers */,
+				DDB822B215A13E2900CDF560 /* winreg.h in Headers */,
+				DDB822B315A13E2900CDF560 /* winsock2.h in Headers */,
+				DDB822B415A13E2900CDF560 /* winuser.h in Headers */,
+				DDB822B515A13E2900CDF560 /* Ws2tcpip.h in Headers */,
+				DDB822B615A13E2900CDF560 /* wtypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		95BA6635154A8EF6007EAB14 /* LibSubtitle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BA6643154A8EF6007EAB14 /* Build configuration list for PBXNativeTarget "LibSubtitle" */;
+			buildPhases = (
+				95BA6632154A8EF6007EAB14 /* Sources */,
+				95BA6633154A8EF6007EAB14 /* Frameworks */,
+				95BA6634154A8EF6007EAB14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibSubtitle;
+			productName = LibSubtitle;
+			productReference = 95BA6636154A8EF6007EAB14 /* libLibSubtitle.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95BA662D154A8EF6007EAB14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 95BA6630154A8EF6007EAB14 /* Build configuration list for PBXProject "LibSubtitle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95BA662B154A8EF6007EAB14;
+			productRefGroup = 95BA6637154A8EF6007EAB14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95BA6635154A8EF6007EAB14 /* LibSubtitle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95BA6632154A8EF6007EAB14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BA665E154A8F4A007EAB14 /* ALI_DTV_SUB.c in Sources */,
+				95BA665F154A8F4A007EAB14 /* dsub_decoder.c in Sources */,
+				95BA6660154A8F4A007EAB14 /* dsub_display_set.c in Sources */,
+				95BA6661154A8F4A007EAB14 /* dsub_finder.c in Sources */,
+				95BA6662154A8F4A007EAB14 /* dsub_renderer.c in Sources */,
+				95BA6663154A8F4A007EAB14 /* dsub_segments.c in Sources */,
+				95BA6664154A8F4A007EAB14 /* exlist.c in Sources */,
+				95BA6665154A8F4A007EAB14 /* subdecoder.cpp in Sources */,
+				95BA6666154A8F4A007EAB14 /* SUBSync.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95BA6641154A8EF6007EAB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95BA6642154A8EF6007EAB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95BA6644154A8EF6007EAB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DSTROOT = /tmp/LibSubtitle.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LibSubtitle/LibSubtitle-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95BA6645154A8EF6007EAB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DSTROOT = /tmp/LibSubtitle.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LibSubtitle/LibSubtitle-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95BA6630154A8EF6007EAB14 /* Build configuration list for PBXProject "LibSubtitle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BA6641154A8EF6007EAB14 /* Debug */,
+				95BA6642154A8EF6007EAB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BA6643154A8EF6007EAB14 /* Build configuration list for PBXNativeTarget "LibSubtitle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BA6644154A8EF6007EAB14 /* Debug */,
+				95BA6645154A8EF6007EAB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95BA662D154A8EF6007EAB14 /* Project object */;
+}
